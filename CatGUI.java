@@ -40,7 +40,7 @@ public class CatGUI {
 		 * @param e the event to be performed
 		 * */
 		public void actionPerformed(final ActionEvent e) {
-			int random = (int)(Math.random() * 15) +1;
+			int random = (int)(Math.random() * 14) +1;
 			
 			Image image = null;
 		    try {
@@ -98,10 +98,6 @@ public class CatGUI {
 		    	}
 		    	else if(random==14) {
 		    		URL url = new URL("https://i.pinimg.com/564x/46/e3/a2/46e3a21b543e882f36b6eeb220f1a0df.jpg");
-		    		image = ImageIO.read(url);
-		    	}
-		    	else if(random==15) {
-		    		URL url = new URL("https://i.pinimg.com/564x/6b/ec/30/6bec3005c5436138166b47599ff17007.jpg");
 		    		image = ImageIO.read(url);
 		    	}
 	        } catch (IOException bruh) {
